@@ -44,8 +44,6 @@
     border-bottom-right-radius: 1em;
     max-width: 586px;
     margin: 0 auto;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   }
 
   .p-info p {
@@ -54,7 +52,7 @@
     margin-top: 0;
     font-weight: normal;
     margin-bottom: 0;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .p-info {
@@ -63,10 +61,12 @@
   }
 
   .p-title {
-    background-color: #bd9c6c;
-    width: 100%;
+    background-color: #b58133dd;
     font-size: 16px;
     padding: 0.4em;
+    border-radius: 0.3em;
+    box-shadow: rgba(50, 50, 93, 0.194) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.178) 0px 8px 16px -8px;
   }
 
   .p-title h2 {
@@ -78,7 +78,7 @@
   }
 
   a {
-    font-size: 9px;
+    font-size: 12px;
   }
 
      .short-courses {
@@ -89,7 +89,6 @@
     font-size: 16px;
     border-radius: 0.4em;
     background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   }
 
   .shrt-courses-info h2 {
