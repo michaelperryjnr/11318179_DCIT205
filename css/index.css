@@ -217,7 +217,7 @@
 
   .short-courses-ls {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     font-size: 16px;
     gap: 1em;
     
@@ -597,6 +597,14 @@
     max-width: 586px;
     margin: 0 auto;
     box-shadow: rgba(0, 0, 0, 0.139) 0px 5px 15px;
+    transition: all 0.2s ease-out;
+    transform: scale(1);
+    cursor: pointer;
+  }
+
+  .programe:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-in;
   }
 
   .p-info p {
@@ -753,11 +761,14 @@
     padding: 0.7em;
     border-radius: 0.5em;
     z-index: 1;
+    transition: all 0.2s ease-out;
+    transform: scale(1);
   }
 
   .reg-btn:hover {
     background-color: rgb(117, 85, 26);
     transition: 0.5s;
+    transform: scale(1.05);
   }
 
   .reg-btn a {
@@ -784,6 +795,15 @@
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
     flex: 1;
+    transition: all 0.2s ease-out;
+    transform: scale(1);
+    cursor: pointer;
+  }
+
+  .course-item:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-in;
+    overflow: hidden;
   }
 
   .course-i-img-container {
