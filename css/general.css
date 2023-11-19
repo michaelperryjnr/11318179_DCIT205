@@ -1,7 +1,7 @@
 html {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
-  background-color: rgba(221, 221, 221, 0.872);
+  background-color: rgb(255, 255, 255);
 }
 
 ::selection {
@@ -50,7 +50,7 @@ a {
     left: 0;
     right: 0;
     padding: 0.05rem;
-    background-color: white;
+    background-color: rgb(241, 240, 240);
     z-index: 100;
   }
 
