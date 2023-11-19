@@ -52,7 +52,7 @@
     margin-top: 0;
     font-weight: normal;
     margin-bottom: 0;
-    font-size: 0.7rem;
+    font-size: 0.95rem;
   }
 
   .p-info {
@@ -70,7 +70,7 @@
   }
 
   .p-title h2 {
-    font-size: 0.9rem;
+    font-size: 1.15rem;
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
@@ -78,23 +78,43 @@
   }
 
   a {
-    font-size: 0.7rem;
+    font-size: 0.85rem;
   }
 
-     .short-courses {
+  .short-courses {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
     font-size: 16px;
     border-radius: 0.4em;
-    background-color: white;
+    background-color: rgb(47, 47, 173);
+    padding-bottom: 1em;
+  }
+
+  .shrt-c-title h2 {
+    color: white;
+    margin-bottom: 0;
+  }
+
+  .shrt-c-title {
+    display: none;
+  }
+
+
+  .shrt-courses-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .shrt-courses-info h2 {
     margin-bottom: 0;
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
+    color: white;
   }
 
   .shrt-courses-info p {
@@ -102,24 +122,61 @@
     margin-top: 0.6rem;
     margin-left: 0.6rem;
     margin-right: 0.6rem;
-    font-size: 12px;
+    color: white;
   }
 
+  .line {
+    width: 10em;
+    font-family: 16px;
+    padding: 0.1em;
+    background-color: white;
+    margin: 0 auto;
+  }
+
+  .ico-n-txt p,
+  .p-col p {
+    text-align: left;
+    color: white;
+  }
   .shrt-courses-info h3 {
     text-align: center;
-    font-size: 17px;
-  } 
+  }
+
+  .programme-cols {
+    font-size: 16px;
+    padding: 2em;
+  }
+
+  .reg-btn {
+    background-color: white;
+    font-size: 16px;
+    padding: 0.7em;
+    border-radius: 0.5em;
+  }
+
+  .reg-btn:hover {
+    background-color: rgb(117, 85, 26);
+    transition: 0.5s;
+  }
+
+  .reg-btn a {
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .reg-btn a:hover {
+    color: white;
+    transition: 0.5s;
+  }
 }
-
-
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    main {
-        margin-top: -7rem;
-    }
-  
-    /* Hero Section */
+  main {
+    margin-top: -7rem;
+  }
+
+  /* Hero Section */
 
   .hero-text {
     position: absolute;
@@ -194,21 +251,47 @@
     text-align: center;
   }
 
-    .short-courses {
+  .short-courses {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
     font-size: 16px;
     border-radius: 0.4em;
+    background-color: rgb(47, 47, 173);
+    padding-bottom: 1em;
+  }
+
+  .shrt-c-title h2 {
+    color: white;
+    margin-bottom: 0;
+  }
+
+  .shrt-c-title {
+    font-size: 16px;
+    margin-bottom: 3em;
+  }
+
+  .line {
+    width: 10em;
+    font-family: 16px;
+    padding: 0.1em;
     background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin: 0 auto;
+  }
+
+  .shrt-courses-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
   }
 
   .shrt-courses-info h2 {
     margin-bottom: 0;
     font-size: 24px;
     text-align: center;
+    color: white;
   }
 
   .shrt-courses-info p {
@@ -216,19 +299,47 @@
     margin-top: 0.6rem;
     margin-left: 0.6rem;
     margin-right: 0.6rem;
+    color: white;
   }
 
+  .ico-n-txt p,
+  .p-col p {
+    text-align: left;
+    color: white;
+  }
   .shrt-courses-info h3 {
     text-align: center;
-  } 
+  }
+
+  .reg-btn {
+    background-color: white;
+    font-size: 16px;
+    padding: 0.7em;
+    border-radius: 0.5em;
+  }
+
+  .reg-btn:hover {
+    background-color: rgb(117, 85, 26);
+    transition: 0.5s;
+  }
+
+  .reg-btn a {
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .reg-btn a:hover {
+    color: white;
+    transition: 0.5s;
+  }
 }
 
 /*Desktop*/
 @media only screen and (min-width: 1024px) {
-    main {
-        margin-top: -15rem;
-    }
-    /* Hero Section */
+  main {
+    margin-top: -15rem;
+  }
+  /* Hero Section */
   .hero {
     margin-top: 1rem;
   }
@@ -312,13 +423,13 @@
 
   .short-courses {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
     font-size: 16px;
     border-radius: 0.4em;
     background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   }
 
   .shrt-courses-info h2 {
@@ -334,5 +445,93 @@
 
   .shrt-courses-info h3 {
     text-align: center;
-  } 
+  }
+
+  .shrt-c-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-size: 16px;
+  }
+
+  .shrt-courses-info .line {
+    background-color: rgb(117, 85, 26);
+    margin: 0 auto;
+  }
+
+  .line {
+    width: 10em;
+    font-family: 16px;
+    padding: 0.1em;
+    background-color: white;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .shrt-c-title h2 {
+    text-align: center;
+    margin-bottom: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .shrt-courses-container {
+    margin-top: 1rem;
+    background-color: rgb(47, 47, 173);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+
+  .programme-cols {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 16px;
+    margin-top: 1.5em;
+    padding: 0.5em;
+    margin-bottom: 2em;
+  }
+
+  .p-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 0.5em;
+  }
+
+  .ico-n-txt p,
+  .p-col p {
+    text-align: center;
+    color: white;
+  }
+
+  .reg-btn {
+    margin: 0 auto;
+    background-color: white;
+    font-size: 16px;
+    padding: 0.7em;
+    border-radius: 0.5em;
+  }
+
+  .reg-btn:hover {
+    background-color: rgb(117, 85, 26);
+    transition: 0.5s;
+  }
+
+  .reg-btn a {
+    font-weight: 700;
+  }
+
+  .reg-btn a:hover {
+    color: white;
+    transition: 0.5s;
+  }
 }
