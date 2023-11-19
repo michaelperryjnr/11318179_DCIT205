@@ -54,6 +54,7 @@
     margin-top: 0;
     font-weight: normal;
     margin-bottom: 0;
+    font-size: 10px;
   }
 
   .p-info {
@@ -69,10 +70,15 @@
   }
 
   .p-title h2 {
+    font-size: 13px;
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
     color: white;
+  }
+
+  a {
+    font-size: 9px;
   }
 
      .short-courses {
@@ -88,7 +94,7 @@
 
   .shrt-courses-info h2 {
     margin-bottom: 0;
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
   }
 
@@ -97,10 +103,12 @@
     margin-top: 0.6rem;
     margin-left: 0.6rem;
     margin-right: 0.6rem;
+    font-size: 12px;
   }
 
   .shrt-courses-info h3 {
     text-align: center;
+    font-size: 17px;
   } 
 }
 
