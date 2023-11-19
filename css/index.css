@@ -3,7 +3,7 @@
   /* Hero Section */
 
   .hero {
-    margin-top: 1rem;
+    margin-top: -4rem;
   }
 
   .hero-video {
@@ -18,10 +18,22 @@
   }
 
   .hero-text {
-    display: none;
     position: absolute;
-    top: 20%;
+    top: 28%;
     left: 5%;
+  }
+
+  .hero-text h1 {
+    font-size: 1.7rem;
+    color: white;
+    margin-bottom: 0;
+  }
+
+  .hero-text p {
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #b58133dd;
   }
 
   .programmes {
@@ -85,12 +97,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     margin-top: 2rem;
     font-size: 16px;
     border-radius: 0.4em;
     background-color: rgb(47, 47, 173);
-    padding-bottom: 1em;
   }
 
   .shrt-c-title h2 {
@@ -102,12 +112,29 @@
     display: none;
   }
 
-
   .shrt-courses-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+    font-size: 16px;
+    padding-bottom: 1em;
+  }
+
+  .shrt-img-container {
+    position: absolute;
+    /* height: 100%; */
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    filter: brightness(25%) grayscale(40%);
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    border-radius: 0.5em;
   }
 
   .shrt-courses-info h2 {
@@ -133,11 +160,28 @@
     margin: 0 auto;
   }
 
-  .ico-n-txt p,
+  .ico-n-txt {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    gap: 0.5em;
+  }
+
+  .ico-n-txt img {
+    stroke: rgb(181, 127, 27);
+  }
+
+  .ico-n-txt h2,
   .p-col p {
     text-align: left;
     color: white;
   }
+
+  .p-col {
+    max-width: 300px;
+  }
+
   .shrt-courses-info h3 {
     text-align: center;
   }
@@ -145,6 +189,7 @@
   .programme-cols {
     font-size: 16px;
     padding: 2em;
+    z-index: 1;
   }
 
   .reg-btn {
@@ -152,6 +197,7 @@
     font-size: 16px;
     padding: 0.7em;
     border-radius: 0.5em;
+    z-index: 1;
   }
 
   .reg-btn:hover {
@@ -167,6 +213,62 @@
   .reg-btn a:hover {
     color: white;
     transition: 0.5s;
+  }
+
+  .short-courses-ls {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 16px;
+    gap: 1em;
+    
+  }
+
+  .course-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.139) 0px 5px 15px;
+    font-size: 16px;
+    flex: 1;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .course-i-img-container {
+    flex: 1.5;
+    flex-shrink: 0;
+  }
+
+  .course-item-img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+  }
+
+  .item-txt-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    padding: 1em;
+    flex: 1;
+  }
+
+  .item-title h2,
+  .item-info p {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .item-title h2 {
+    font-size: 1.1em;
+    margin-bottom: 0.6em;
+  }
+  .item-title {
+    flex: 1;
+  }
+  .item-info {
+    flex: 2;
   }
 }
 
@@ -259,7 +361,6 @@
     font-size: 16px;
     border-radius: 0.4em;
     background-color: rgb(47, 47, 173);
-    padding-bottom: 1em;
   }
 
   .shrt-c-title h2 {
@@ -267,9 +368,15 @@
     margin-bottom: 0;
   }
 
+  .shrt-c-title p {
+    color: white;
+    text-align: center;
+  }
+
   .shrt-c-title {
     font-size: 16px;
-    margin-bottom: 3em;
+    padding: 1em;
+    z-index: 1;
   }
 
   .line {
@@ -285,6 +392,31 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+    font-size: 16px;
+    padding-bottom: 1em;
+  }
+
+  .programme-cols {
+    z-index: 1;
+  }
+
+  .shrt-img-container {
+    position: absolute;
+    /* height: 100%; */
+    bottom: 0;
+    top: 0;
+    z-index: 1;
+    filter: brightness(25%) grayscale(40%);
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .shrt-img-container img {
+    width: 100%;
+    object-fit: cover;
   }
 
   .shrt-courses-info h2 {
@@ -302,7 +434,15 @@
     color: white;
   }
 
-  .ico-n-txt p,
+  .ico-n-txt {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    gap: 0.5em;
+  }
+
+  .ico-n-txt h2,
   .p-col p {
     text-align: left;
     color: white;
@@ -315,7 +455,9 @@
     background-color: white;
     font-size: 16px;
     padding: 0.7em;
+    margin-left: 0.7em;
     border-radius: 0.5em;
+    z-index: 1;
   }
 
   .reg-btn:hover {
@@ -331,6 +473,65 @@
   .reg-btn a:hover {
     color: white;
     transition: 0.5s;
+  }
+
+  .p-col {
+    font-size: 16px;
+    padding: 1em;
+  }
+
+  .short-courses-ls {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .course-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.139) 0px 5px 15px;
+    font-size: 16px;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    flex: 1;
+  }
+
+  .course-i-img-container {
+    flex: 1.5;
+    flex-shrink: 0;
+  }
+
+  .course-item-img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+  }
+
+  .item-txt-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    padding: 1em;
+    flex: 1;
+  }
+
+  .item-title h2,
+  .item-info p {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .item-title h2 {
+    font-size: 1.1em;
+    margin-bottom: 0.6em;
+  }
+  .item-title {
+    flex: 1;
+  }
+  .item-info {
+    flex: 2;
   }
 }
 
@@ -358,7 +559,7 @@
 
   .hero-text {
     position: absolute;
-    top: 25%;
+    top: 19%;
     left: 5%;
   }
 
@@ -390,6 +591,8 @@
     background-color: white;
     font-size: 16px;
     padding-bottom: 1em;
+    padding-top: 1em;
+    flex: 1;
     border-radius: 1em;
     max-width: 586px;
     margin: 0 auto;
@@ -408,15 +611,19 @@
   .p-info {
     font-size: 16px;
     padding: 0.9em;
+    flex: 1;
   }
 
   .p-title {
     font-size: 13px;
     padding: 0.5em;
+    flex: 1;
+    display: flex;
+    align-items: center;
   }
 
   .p-title h2 {
-    margin-top: 1em;
+    margin-top: 0;
     margin-bottom: 0;
     text-align: center;
   }
@@ -451,9 +658,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 1em;
     margin-top: 1em;
     font-size: 16px;
+    z-index: 1;
+  }
+
+  .shrt-c-title p {
+    color: white;
+    text-align: center;
+    margin-top: 0;
   }
 
   .shrt-courses-info .line {
@@ -480,12 +693,25 @@
 
   .shrt-courses-container {
     margin-top: 1rem;
-    background-color: rgb(47, 47, 173);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .shrt-img-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    filter: brightness(25%) grayscale(40%);
+  }
+
+  .shrt-img-container img {
+    width: 100%;
   }
 
   .programme-cols {
@@ -496,6 +722,7 @@
     margin-top: 1.5em;
     padding: 0.5em;
     margin-bottom: 2em;
+    z-index: 1;
   }
 
   .p-col {
@@ -507,7 +734,13 @@
     padding: 0.5em;
   }
 
-  .ico-n-txt p,
+  .ico-n-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ico-n-txt h2,
   .p-col p {
     text-align: center;
     color: white;
@@ -519,6 +752,7 @@
     font-size: 16px;
     padding: 0.7em;
     border-radius: 0.5em;
+    z-index: 1;
   }
 
   .reg-btn:hover {
@@ -533,5 +767,59 @@
   .reg-btn a:hover {
     color: white;
     transition: 0.5s;
+  }
+
+  .short-courses-ls {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .course-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.139) 0px 5px 15px;
+    font-size: 16px;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    flex: 1;
+  }
+
+  .course-i-img-container {
+    flex: 1.5;
+    flex-shrink: 0;
+  }
+
+  .course-item-img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+  }
+
+  .item-txt-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    padding: 1em;
+    flex: 1;
+  }
+
+  .item-title h2,
+  .item-info p {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .item-title h2 {
+    font-size: 1.1em;
+    margin-bottom: 0.6em;
+  }
+  .item-title {
+    flex: 1;
+  }
+  .item-info {
+    flex: 2;
   }
 }
