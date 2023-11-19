@@ -52,7 +52,7 @@
     margin-top: 0;
     font-weight: normal;
     margin-bottom: 0;
-    font-size: 12px;
+    font-size: 0.7rem;
   }
 
   .p-info {
@@ -62,15 +62,15 @@
 
   .p-title {
     background-color: #b58133dd;
-    font-size: 16px;
+    font-size: 1rem;
     padding: 0.4em;
     border-radius: 0.3em;
-    box-shadow: rgba(50, 50, 93, 0.194) 0px 13px 27px -5px,
-      rgba(0, 0, 0, 0.178) 0px 8px 16px -8px;
+    box-shadow: rgba(50, 50, 93, 0.1) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.116) 0px 8px 16px -8px;
   }
 
   .p-title h2 {
-    font-size: 16px;
+    font-size: 0.9rem;
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
@@ -78,7 +78,7 @@
   }
 
   a {
-    font-size: 12px;
+    font-size: 0.7rem;
   }
 
      .short-courses {
