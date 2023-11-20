@@ -1,0 +1,159 @@
+main {
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+
+.hero {
+  margin-top: -25rem;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 10%;
+  object-fit: cover;
+  filter: grayscale(50%) brightness(28%);
+  border-radius: 2rem;
+}
+
+.hero-text {
+  position: absolute;
+  left: 40%;
+  top: 20%;
+}
+
+.hero-text h2 {
+  font-size: 4rem;
+  color: white;
+  margin-bottom: 0;
+  text-align: center;
+  cursor: default;
+}
+
+.hero-text p {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  cursor: default;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.3rem;
+  box-shadow: rgba(0, 0, 0, 0.139) 0px 5px 15px;
+  font-size: 16px;
+  padding: 1em;
+  border-radius: 1em;
+  transform: scale(1);
+}
+
+.welcome:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in;
+}
+
+.welcome-txt-container {
+  font-size: 16px;
+  padding: 1em;
+}
+
+.welcome-txt-container p {
+  text-align: center;
+}
+
+.welcome-header {
+  font-size: 2.3rem;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.get-to-knw-us p {
+  margin-top: 0.2rem;
+  color: white;
+}
+
+.get-header {
+  color: white;
+  font-size: 2.2rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.get-to-knw-us {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  background-color: #1f3369;
+  padding-left: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 1em;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+.img-left {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  margin-bottom: 2em;
+}
+
+
+.lft-img {
+  flex: 1;
+  font-size: 16px;
+}
+
+.lft-img img {
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+.lft-container {
+  flex: 1;
+  font-size: 16px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.img-right {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  margin-bottom: 2em;
+}
+
+.rgt-img {
+  flex: 1;
+}
+
+.rgt-img img {
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+.rgt-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  font-size: 16px;
+  padding: 1em;
+}
