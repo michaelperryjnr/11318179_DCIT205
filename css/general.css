@@ -165,6 +165,19 @@ a {
     font-size: 1em;
     text-align: left;
   }
+
+  .ft-rw-copy p {
+    color: white;
+    font-size: 0.5em;
+  }
+
+  .ft-rw-copy{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
 }
 
 /* Tablet */
@@ -308,6 +321,18 @@ a {
     font-size: 1em;
     text-align: left;
   }
+
+  .ft-rw-copy p {
+    color: white;
+  }
+
+  .ft-rw-copy{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
 }
 
 /* Desktop */
@@ -449,5 +474,17 @@ a {
   form input::placeholder {
     font-size: 1em;
     text-align: left;
+  }
+
+  .ft-rw-copy p {
+    color: white;
+  }
+
+  .ft-rw-copy{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
   }
 }

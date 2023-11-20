@@ -511,6 +511,7 @@
   .course-item-img {
     width: 100%;
     height: 100%;
+    bottom: 0;
     object-position: center;
     object-fit: cover;
   }
@@ -644,24 +645,27 @@
 
   .short-courses {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    margin-top: 2rem;
     font-size: 16px;
     border-radius: 0.4em;
-    background-color: white;
+    background-color: rgb(47, 47, 173);
+    margin-top: 1.5em;
   }
+
+
 
   .shrt-courses-info h2 {
     margin-bottom: 0;
     font-size: 24px;
     text-align: center;
+    color: white;
   }
 
   .shrt-courses-info p {
     text-align: center;
     margin-top: 0.6rem;
+    color: white;
   }
 
   .shrt-courses-info h3 {
@@ -672,7 +676,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 1em;
     font-size: 16px;
     z-index: 1;
   }
@@ -706,20 +709,21 @@
   }
 
   .shrt-courses-container {
-    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 1rem;
     position: relative;
     overflow: hidden;
+    border-radius: 0.4em;
   }
 
   .shrt-img-container {
     position: absolute;
+    top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     z-index: 1;
     filter: brightness(25%) grayscale(40%);
   }
@@ -735,7 +739,7 @@
     font-size: 16px;
     margin-top: 1.5em;
     padding: 0.5em;
-    margin-bottom: 2em;
+    margin-bottom: 0.1em;
     z-index: 1;
   }
 
@@ -769,6 +773,7 @@
     z-index: 1;
     transition: all 0.2s ease-out;
     transform: scale(1);
+    margin-bottom: 1em;
   }
 
   .reg-btn:hover {
