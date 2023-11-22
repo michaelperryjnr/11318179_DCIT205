@@ -1,0 +1,39 @@
+.hero {
+    background-image: url('/assets/images/dcs-banner.jpg') ;
+    width: auto;
+    background-repeat: repeat;
+    background-position: center;
+    z-index: 1;
+    position: relative;
+    font-size: 16px;
+    border-bottom-left-radius:  0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+
+.events-overlay {
+    background-color: rgba(0, 0, 0, 0.687);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    font-size: 16px;
+    border-bottom-left-radius:  0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+
+
+.hero-text-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    font-size: 16px;
+    z-index: 2;
+}
+
+.hero-text-container h1, h2 {
+    z-index: 3;
+    color: white;
+}
