@@ -47,8 +47,8 @@ const footerHTML = `
             <h2>Newsletter</h2>
             <p class="nwl-p">Stay updated with us</p>
             <div class="col-content">
-                <form action="">
-                    <input type="email" required placeholder="Enter your email">
+                <form action="" id="newsletter">
+                    <input type="email" required placeholder="Enter your email" required autocomplete="email" id="newsletter-mail">
                     <button type="button" class="submit-btn">
                         <img src="" alt="arrow">
                     </button>
