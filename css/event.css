@@ -1,0 +1,105 @@
+main {
+    margin-top: 1rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+.hero {
+    background-image: url('/assets/images/dcs-banner.jpg') ;
+    width: auto;
+    background-repeat: repeat;
+    background-position: center;
+    z-index: 1;
+    position: relative;
+    font-size: 16px;
+    border-bottom-left-radius:  0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+
+.events-overlay {
+    background-color: rgba(0, 0, 0, 0.493);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    font-size: 16px;
+    border-bottom-left-radius:  0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+
+
+.hero-text-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    font-size: 16px;
+    z-index: 2;
+}
+
+.hero-text-container h1, h2 {
+    z-index: 3;
+    color: white;
+}
+
+.upcoming-events {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.upcoming-events h1 {
+    text-align: left;
+    font-size: 2rem;
+}
+
+.events {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+.event-details, .event-image-container {
+    flex: 1;
+}
+
+.event-details {
+    font-size: 16px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+}
+
+.event-image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.events-container {
+    display:flex;
+    flex-direction: row;
+    font-size: 16px;
+    margin-bottom: 1em;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.139) 0px 5px 15px;
+    border-radius: 1em;
+    overflow: hidden;
+    transition: all 0.2s ease-out;
+    transform: scale(1);
+}
+
+.events-container:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-in;
+}
