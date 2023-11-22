@@ -10,6 +10,39 @@ ul {
     padding-inline-start: 0;
 }
 
+@media only screen and (max-width: 767px) {
+    .events {
+    display: flex;
+    flex-direction: column;
+}
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .events {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .events {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+}
+
 .hero {
     background-image: url('/assets/images/dcs-banner.jpg') ;
     width: auto;
@@ -61,14 +94,6 @@ ul {
     font-size: 2rem;
 }
 
-.events {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
-    align-self: center;
-    justify-content: center;
-    justify-self: center;
-}
 
 .event-details, .event-image-container {
     flex: 1;
