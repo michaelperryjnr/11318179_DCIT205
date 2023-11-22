@@ -10,6 +10,10 @@ html {
   color: white;
 }
 
+.nav-links, .mobile-nav-links-list  {
+  list-style-type: none;
+}
+
 body {
   box-sizing: border-box;
   padding: 0.8rem;
@@ -56,12 +60,56 @@ a {
     z-index: 100;
   }
 
+  .mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.719);
+    font-size: 16px;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 40%;
+  }
+
+#mobile-nav-links-list {
+  display: none;
+}
+
+  .mobile-list {
+    list-style-type: none;
+  }
+
+  .mobile-nav-links li {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 3em;
+  }
+
+  .mobile-nav-links li a {
+    text-decoration: none;
+    color: white;
+  }
+
   .nav-icon {
     display: block;
     cursor: pointer;
     font-size: 16px;
     padding: 0.4em;
   }
+
+  .menu-close {
+    width: 13%;
+    align-items: flex-end;
+    padding-left: 90%;
+  }
+
+
   .logo {
     width: 10%;
   }
@@ -199,6 +247,10 @@ a {
   }
 
   .nav-icon {
+    display: none;
+  }
+
+  .mobile-nav-links {
     display: none;
   }
 
@@ -354,6 +406,10 @@ a {
   }
 
   .nav-icon {
+    display: none;
+  }
+
+  .mobile-nav-links {
     display: none;
   }
 
