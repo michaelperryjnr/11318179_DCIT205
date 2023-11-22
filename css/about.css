@@ -1,3 +1,23 @@
+@media only screen and (max-width: 767px){
+  .hero {
+    display: none;
+  }
+
+  main {
+    margin-top: 2.8rem;
+  }
+
+  .rgt-img img, .lft-img img{
+    object-fit: cover;
+    width: 100%;
+    filter: brightness(40%) grayscale(50%);
+}
+
+video {
+  filter: brightness(70%) grayscale(50%);
+}
+}
+
 main {
   position: relative;
 }
