@@ -9,6 +9,7 @@ const headerHTML = `
                     <a href="about.html">ABOUT</a>
                     <a href="faculty.html">FACULTY</a>
                     <a href="research-groups.html">RESEARCH GROUPS</a>
+                    <a href="events.html">EVENTS</a>
             </div>
             <div class="nav-icon">
                 <img src="assets/images/menu-icon.svg" alt="menu-icon" >
