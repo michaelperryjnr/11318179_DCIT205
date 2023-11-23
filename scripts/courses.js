@@ -387,81 +387,55 @@ const data = [
   },
 ];
 
-const searchField = document.querySelector(".search-course");
-const filter = "intro";
-let resultDiv = document.querySelector(".results");
-let courseTitle = document.querySelector(".title");
-let courseCode = document.querySelector(".coursecode");
+document.addEventListener("DOMContentLoaded", function () {
+  const searchField = document.getElementById("search-course");
+  const resultDiv = document.getElementById("results");
+  const courseTitle = document.getElementById("title");
+  const courseCode = document.getElementById("coursecode");
+  const description = document.getElementById("description");
 
-let discription = document.querySelector(".discription");
-
-searchField.addEventListener("keydown", () => {
-  searchDisplay(searchField.value);
-});
-
-const searchDisplay = (filter) => {
-  let filteredCourse = performFilter(filter);
-  displayResults(filteredCourse);
-};
-const displayDiscription = (id) => {
-  let searchValueField = "";
-  searchField.value
-    ? (searchValueField = searchField.value)
-    : (searchValueField = filter);
-  let filteredCourse = performFilter(searchValueField);
-  courseTitle.textContent = filteredCourse[id].title;
-  courseCode.textContent = filteredCourse[id].coursecode;
-  discription.textContent = filteredCourse[id].data;
-};
-
-const performFilter = (filterBy) => {
-  filterBy = filterBy.toLocaleLowerCase();
-  return data.filter(
-    (datum) => datum.title.toLocaleLowerCase().indexOf(filterBy) !== -1
-  );
-};
-
-let filteredCourse = performFilter(filter);
-
-courseTitle.textContent = filteredCourse[0].title;
-courseCode.textContent = filteredCourse[0].coursecode;
-discription.textContent = filteredCourse[0].data;
-
-const displayResults = (filteredCourse) => {
-  resultDiv.innerHTML = "";
-  let newTable = document.createElement("table");
-  filteredCourse.forEach((course) => {
-    if (newTable.childElementCount > 13) {
-      return;
-    }
-    console.log(newTable.childElementCount);
-    let tableRow = document.createElement("tr");
-    let courseCodeItem = document.createElement("td");
-    let courseCodeAnchorTag = document.createElement("a");
-    let courseTitleItem = document.createElement("td");
-    let courseTitleAnchorTag = document.createElement("a");
-    courseCodeAnchorTag.textContent = course.coursecode;
-    courseTitleAnchorTag.textContent = course.title;
-    courseCodeItem.style.paddingRight = "15px";
-    courseCodeAnchorTag.href = `javascript:displayDiscription(${newTable.childElementCount})`;
-    courseTitleAnchorTag.href = `javascript:displayDiscription(${newTable.childElementCount})`;
-    courseTitleAnchorTag.onclick = function () {
-      displayDiscription();
-    };
-    courseCodeAnchorTag.onclick = function () {
-      displayDiscription();
-    };
-    courseCodeItem.appendChild(courseCodeAnchorTag);
-    courseTitleItem.appendChild(courseTitleAnchorTag);
-    tableRow.appendChild(courseCodeItem);
-    tableRow.appendChild(courseTitleItem);
-
-    newTable.appendChild(tableRow);
+  searchField.addEventListener("input", () => {
+    searchDisplay(searchField.value.toLowerCase());
   });
 
-  resultDiv.appendChild(newTable);
-};
+  const searchDisplay = (filter) => {
+    let filteredCourse = performFilter(filter);
+    displayResults(filteredCourse);
+  };
 
-searchField.value
-  ? searchDisplay(searchField.value)
-  : displayResults(filteredCourse);
+  const performFilter = (filterBy) => {
+    return data.filter((datum) => datum.title.toLowerCase().includes(filterBy));
+  };
+
+  const displayResults = (filteredCourse) => {
+    resultDiv.innerHTML = "";
+    filteredCourse.slice(0, 14).forEach((course, index) => {
+      let courseDiv = document.createElement("div");
+      let courseCodeItem = document.createElement("a");
+      let courseTitleItem = document.createElement("a");
+      courseCodeItem.textContent = course.coursecode;
+      courseTitleItem.textContent = course.title;
+      courseCodeItem.href = "#";
+      courseTitleItem.href = "#";
+      courseCodeItem.addEventListener("click", () => displayDescription(index));
+      courseTitleItem.addEventListener("click", () =>
+        displayDescription(index)
+      );
+      courseDiv.appendChild(courseCodeItem);
+      courseDiv.appendChild(courseTitleItem);
+      resultDiv.appendChild(courseDiv);
+    });
+  };
+
+  const displayDescription = (id) => {
+    let selectedCourse = data[id];
+    courseTitle.textContent = selectedCourse.title;
+    courseCode.textContent = selectedCourse.coursecode;
+    description.textContent = selectedCourse.data;
+  };
+
+  // Initial display
+  displayResults(data);
+
+  // What's next?
+});
