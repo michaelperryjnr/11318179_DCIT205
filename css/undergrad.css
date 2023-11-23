@@ -1,0 +1,186 @@
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  .it-cs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .it-cs-cols h1 {
+    margin-top: 0;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .it-cs-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  dl {
+    min-width: 70%;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+  .it-cs-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.hero {
+  background-image: url("/assets/images/dcs-banner.jpg");
+  width: auto;
+  background-repeat: repeat;
+  background-position: center;
+  z-index: 1;
+  position: relative;
+  font-size: 16px;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+.events-overlay {
+  background-color: rgba(0, 0, 0, 0.493);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  font-size: 16px;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+.hero-text-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  font-size: 16px;
+  z-index: 2;
+}
+
+.hero-text-container h1,
+h2 {
+  z-index: 3;
+  color: white;
+}
+
+.it-cs-cols {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  font-size: 16px;
+  padding: 1em;
+}
+
+.it-cs-cols h1 {
+  text-align: center;
+}
+
+.abt-undergrad,
+.it-cs-programmes {
+  font-size: 16px;
+  padding: 1em;
+  margin-top: 1.5rem;
+}
+
+.abt-undergrad {
+  box-shadow: rgba(50, 50, 93, 0.075) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.05) 0px 8px 16px -8px;
+  font-size: 16px;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+.abt-undergrad-h1-container {
+  background-color: rgb(173, 147, 15);
+  font-size: 16px;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  padding-left: 1em;
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
+}
+
+.abt-undergrad-h1 {
+  text-align: left;
+  font-size: 1.5em;
+  color: white;
+}
+
+.abt-undergrad-p-container {
+  font-size: 16px;
+  padding-left: 1em;
+}
+
+.abt-undergrad-p-container p {
+  text-align: left;
+  font-weight: 500;
+}
+
+.abt-undergrad-p-container ul {
+  list-style-type: lower-roman;
+  text-align: left;
+}
+
+.it-cs-h2-container {
+  background-color: rgb(69, 69, 199);
+  font-size: 16px;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  padding-left: 1em;
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
+}
+
+table {
+  margin-bottom: 2rem;
+}
+
+dd {
+  margin-inline-start: 0;
+  font-size: 16px;
+  padding-left: 1em;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  /* display: none; */
+  box-shadow: rgba(50, 50, 93, 0.146) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.112) 0px 8px 16px -8px;
+  border-bottom-right-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+}
+
+dd h4 {
+  margin-top: 0;
+}
+
+dd h6 {
+  margin-top: 0;
+  font-size: 0.9em;
+  margin-bottom: 0;
+}
+
+dt {
+  font-size: 16px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  background-color: rgb(173, 147, 15);
+  margin-bottom: 1rem;
+  border-top-right-radius: 0.5em;
+  border-top-left-radius: 0.5em;
+  cursor: pointer;
+}
+
+dt a {
+  color: white;
+  font-weight: bold;
+}
