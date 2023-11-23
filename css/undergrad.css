@@ -9,6 +9,20 @@
   .it-cs-cols h1 {
     margin-top: 0;
   }
+
+  .hero-programmes {
+  background-image: url("/assets/images/dcs-banner.jpg");
+  width: auto;
+  background-repeat: repeat;
+  background-position: center;
+  z-index: 1;
+  position: relative;
+  /* margin-top: 14rem; */
+  font-size: 16px;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
 }
 
 /* Tablet */
@@ -22,6 +36,20 @@
   dl {
     min-width: 70%;
   }
+
+  .hero-programmes {
+  background-image: url("/assets/images/dcs-banner.jpg");
+  width: auto;
+  background-repeat: repeat;
+  background-position: center;
+  z-index: 1;
+  position: relative;
+  /* margin-top: 14rem; */
+  font-size: 16px;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
 }
 
 /* Desktop */
@@ -31,18 +59,25 @@
     flex-direction: row;
     justify-content: center;
   }
-}
-.hero {
+  .hero-programmes {
   background-image: url("/assets/images/dcs-banner.jpg");
   width: auto;
   background-repeat: repeat;
   background-position: center;
   z-index: 1;
   position: relative;
+  margin-top: 14rem;
   font-size: 16px;
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
 }
+
+}
+
+.p-title h2 {
+    color:rgb(69, 69, 199)
+}
+
 
 .events-overlay {
   background-color: rgba(0, 0, 0, 0.493);
@@ -55,7 +90,7 @@
   border-bottom-right-radius: 0.5em;
 }
 
-.hero-text-container {
+.hero-programmes-text-container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -66,7 +101,7 @@
   z-index: 2;
 }
 
-.hero-text-container h1,
+.hero-programmes-text-container h1,
 h2 {
   z-index: 3;
   color: white;
@@ -184,3 +219,4 @@ dt a {
   color: white;
   font-weight: bold;
 }
+
