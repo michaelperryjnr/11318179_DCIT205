@@ -5,6 +5,7 @@ const navContent = document.querySelector('.mobile-nav-links');
 menuBtn.addEventListener('click', () => {
     // navContent.classList.add('active');
     console.log('nav-bar added')
+    menuBtn.style.display = "none";
     navContent.style.display = "block";
      navContent.style.paddingRight = "1em";
      navContent.style.paddingTop = "1em";
@@ -16,7 +17,8 @@ menuBtn.addEventListener('click', () => {
 });
 
 closeBtn.addEventListener('click', () => {
-    navContent.classList.remove('active');
-    console.log('nav-bar removed')
+    // navContent.classList.remove('active');
+    menuBtn.style.display = "contents";
+    console.log('nav-bar removed');
     navContent.style.display = "none";
 });
