@@ -388,11 +388,11 @@ const data = [
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
-  const searchField = document.getElementById("search-course");
-  const resultDiv = document.getElementById("results");
-  const courseTitle = document.getElementById("title");
+  const searchField = document.getElementById("search-course-search");
+  const resultDiv = document.getElementById("results-search");
+  const courseTitle = document.getElementById("title-search");
   const courseCode = document.getElementById("coursecode");
-  const description = document.getElementById("description");
+  const description = document.getElementById("description-search");
 
   searchField.addEventListener("input", () => {
     searchDisplay(searchField.value.toLowerCase());
@@ -408,15 +408,17 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   const displayResults = (filteredCourse) => {
-    resultDiv.innerHTML = "";
+    resultDiv.innerHTML = ``;
     filteredCourse.slice(0, 14).forEach((course, index) => {
       let courseDiv = document.createElement("div");
       let courseCodeItem = document.createElement("a");
       let courseTitleItem = document.createElement("a");
       courseCodeItem.textContent = course.coursecode;
       courseTitleItem.textContent = course.title;
-      courseCodeItem.href = "#";
-      courseTitleItem.href = "#";
+      courseCodeItem.style.cursor = "pointer";
+      courseTitleItem.style.cursor = "pointer";
+      // courseCodeItem.href = "";
+      courseTitleItem.href = "#title-search";
       courseCodeItem.addEventListener("click", () => displayDescription(index));
       courseTitleItem.addEventListener("click", () =>
         displayDescription(index)
