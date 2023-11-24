@@ -50,7 +50,7 @@ const footerHTML = `
                 <form action="" id="newsletter">
                     <input type="email" required placeholder="Enter your email" required autocomplete="email" id="newsletter-mail">
                     <button type="button" class="submit-btn">
-                        <img src="" alt="arrow">
+                        &#8594;
                     </button>
                 </form>
             </div>
