@@ -30,6 +30,24 @@
     border-radius: 1.3em;
     filter: brightness(80%) grayscale(30%);
   }
+
+  .it-cs-programmes {
+    font-size: 16px;
+    margin-top: 1.5rem;
+  }
+
+  .it-cs-cols {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    font-size: 16px;
+  }
+
+  td,
+  tr {
+    font-size: 0.7rem;
+  }
 }
 
 /* Tablet */
@@ -58,11 +76,17 @@
   }
 
   .phd-img-container img {
-  width: 100%;
-  font-size: 16px;
-  border-bottom-left-radius: 0.8em;
-  border-bottom-right-radius: 0.8em;
-}
+    width: 100%;
+    font-size: 16px;
+    border-bottom-left-radius: 0.8em;
+    border-bottom-right-radius: 0.8em;
+  }
+
+  .it-cs-programmes {
+    font-size: 16px;
+    padding: 1em;
+    margin-top: 1.5rem;
+  }
 }
 
 /* Desktop */
@@ -86,11 +110,17 @@
   }
 
   .phd-img-container img {
-  width: 100%;
-  font-size: 16px;
-  border-bottom-left-radius: 0.8em;
-  border-bottom-right-radius: 0.8em;
-}
+    width: 100%;
+    font-size: 16px;
+    border-bottom-left-radius: 0.8em;
+    border-bottom-right-radius: 0.8em;
+  }
+
+  .it-cs-programmes {
+    font-size: 16px;
+    padding: 1em;
+    margin-top: 1.5rem;
+  }
 }
 
 .p-title h2 {
@@ -138,8 +168,7 @@ h2 {
   text-align: center;
 }
 
-.abt-undergrad,
-.it-cs-programmes {
+.abt-undergrad {
   font-size: 16px;
   padding: 1em;
   margin-top: 1.5rem;
@@ -248,7 +277,6 @@ dt a {
   padding-right: 0;
 }
 
-
 #search-course-search {
   width: 95%;
   font-size: 16px;
@@ -274,6 +302,8 @@ dt a {
 #title-search {
   font-size: 1.5rem;
   text-align: center;
+  color: black;
+  text-align: left;
 }
 
 #description-search {
@@ -286,4 +316,8 @@ dt a {
 
 #results-search {
   margin-top: 1rem;
+}
+
+.p-title h2 {
+  color: white;
 }
