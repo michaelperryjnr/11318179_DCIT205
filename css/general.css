@@ -213,6 +213,9 @@ a {
     background-color: rgb(255, 196, 0);
     border-top-right-radius: 0.2em;
     border-bottom-right-radius: 0.2em;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
   }
 
   form button:hover {
@@ -375,6 +378,9 @@ a {
     background-color: rgb(255, 196, 0);
     border-top-right-radius: 0.2em;
     border-bottom-right-radius: 0.2em;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
   }
 
   form button:hover {
@@ -536,6 +542,9 @@ a {
     background-color: rgb(255, 196, 0);
     border-top-right-radius: 0.2em;
     border-bottom-right-radius: 0.2em;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
   }
 
   form button:hover {
