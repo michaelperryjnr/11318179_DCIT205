@@ -418,7 +418,7 @@ document.addEventListener("DOMContentLoaded", function () {
       courseCodeItem.style.cursor = "pointer";
       courseTitleItem.style.cursor = "pointer";
       // courseCodeItem.href = "";
-      courseTitleItem.href = "#title-search";
+      courseTitleItem.href = "#results-search";
       courseCodeItem.addEventListener("click", () => displayDescription(index));
       courseTitleItem.addEventListener("click", () =>
         displayDescription(index)
