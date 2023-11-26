@@ -1,39 +1,115 @@
 .hero {
-    background-image: url('/assets/images/dcs-banner.jpg') ;
-    width: auto;
-    background-repeat: repeat;
-    background-position: center;
-    z-index: 1;
-    position: relative;
-    font-size: 16px;
-    border-bottom-left-radius:  0.5em;
-    border-bottom-right-radius: 0.5em;
+  background-image: url("/assets/images/dcs-banner.jpg");
+  width: auto;
+  background-repeat: repeat;
+  background-position: center;
+  z-index: 1;
+  position: relative;
+  font-size: 16px;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
 }
 
 .events-overlay {
-    background-color: rgba(0, 0, 0, 0.687);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    font-size: 16px;
-    border-bottom-left-radius:  0.5em;
-    border-bottom-right-radius: 0.5em;
+  background-color: rgba(0, 0, 0, 0.687);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  font-size: 16px;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
 }
-
 
 .hero-text-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 4em;
-    padding-bottom: 4em;
-    font-size: 16px;
-    z-index: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  font-size: 16px;
+  z-index: 2;
 }
 
-.hero-text-container h1, h2 {
-    z-index: 3;
-    color: white;
+.hero-text-container h1,
+h2 {
+  z-index: 3;
+  color: white;
 }
+
+.faculty-info {
+  margin-top: 4rem;
+  box-shadow: rgba(50, 50, 93, 0.146) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.112) 0px 8px 16px -8px;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    font-size: 16px;
+}
+
+.h1-container h1 {
+  color: white;
+}
+
+.h1-container {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 0.8em;
+  background-color: rgb(14, 14, 200);
+  border-top-right-radius: 0.8em;
+  border-top-left-radius: 0.8em;
+}
+
+.p-container {
+    padding: 2em;
+    font-size: 16px;
+    padding-bottom: 2em;
+}
+
+.faculty-members {
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(50, 50, 93, 0.146) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.112) 0px 8px 16px -8px;
+    margin-top: 2rem;
+}
+
+.faculty-member-info h2 {
+    color: black;
+}
+
+
+.faculty-member-image img{
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+.row {
+    display: flex;
+    flex: column;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    font-size: 16px;
+    margin-top: 0.8em;
+}
+
+.two-pics {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .two-pics .faculty-member-image {
+    width: 30%;
+} */
+
+.two-pics .faculty-member-info .faculty-member-image img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+
