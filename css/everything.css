@@ -1,0 +1,133 @@
+.hero {
+  background-image: url("/assets/images/dcs-banner.jpg");
+  width: auto;
+  background-repeat: repeat;
+  background-position: center;
+  z-index: 1;
+  position: relative;
+  font-size: 16px;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+.events-overlay {
+  background-color: rgba(0, 0, 0, 0.687);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  font-size: 16px;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+.hero-text-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  font-size: 16px;
+  z-index: 2;
+}
+
+.hero-text-container h1,
+h2 {
+  z-index: 3;
+  color: white;
+}
+
+.everything-dcs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    font-size: 16px;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    box-shadow: rgba(50, 50, 93, 0.146) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.112) 0px 8px 16px -8px;
+}
+
+.dcs-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    border-top-color: white;
+  border-top-style: solid;
+  border-top-width: 0.1em;
+}
+
+.h1-container {
+  background-color: rgb(69, 69, 199);
+  font-size: 16px;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  padding-left: 1em;
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
+}
+
+.h1-container h1 {
+  text-align: left;
+  font-size: 1.5em;
+  color: white;
+}
+
+.item-block-1 .dcs-item-img-container a img {
+    width: 100%;
+    height: 100%;
+}
+
+.item-block-2 .dcs-item-img-container a img{
+    width: 100%;
+    height: 100%;
+}
+
+.item-block-1 {
+    background-color: rgb(151, 136, 17);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.item-block-1 .dcs-item .dcs-item-img-container {
+    width: 30%;
+}
+
+.item-block-2 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(26, 38, 154);
+    font-size: 16px;
+    gap: 1em;
+    padding: 0.7em;
+}
+
+/* .item-block-1, .item-block-2 {
+    flex: 1;
+} */
+
+.item-block-2 .dcs-item {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.item-block-2 .dcs-item .dcs-item-img-container, .dcs-item-text-container {
+    width: 50%;
+}
+
+.item-block-2  .dcs-item-text-container {
+    background-color: white;
+    font-size: 16px;
+    padding: 0.8em;
+}
+
+.item-block-2 .dcs-item-text-container h2 {
+    color: rgb(69, 69, 199);
+}
+
+.item-block-2 .dcs-item-text-container p {
+    color: black;
+}
